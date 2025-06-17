@@ -407,7 +407,7 @@ export default function ModernChrimesLanding() {
                       </a>
                     </div>
 
-                    <div className="relative">
+                    {/* <div className="relative">
                       <div className="bg-white rounded-lg p-6 shadow-sm">
                         <Image
                           src="/placeholder.svg?height=200&width=280&text=Meanwood+Cricket+Club+Logo"
@@ -417,7 +417,7 @@ export default function ModernChrimesLanding() {
                           className="w-full h-auto rounded-lg"
                         />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </CardContent>
               </Card>
