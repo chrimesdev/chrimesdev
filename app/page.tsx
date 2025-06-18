@@ -400,7 +400,7 @@ export default function ModernChrimesLanding() {
                         abilities.
                       </p>
                       <a
-                        href="https://meanwoodcc.co.uk"
+                        href="https://www.meanwoodcc.com/"
                         className="text-emerald-600 hover:underline"
                       >
                         Visit the Meanwood Cricket Club website
