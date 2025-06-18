@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   ArrowRight,
   Code,
@@ -19,31 +17,31 @@ export default function ModernChrimesLanding() {
   const clients = [
     {
       name: "NHS England",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/NHS_England_logo.svg/2560px-NHS_England_logo.svg.png",
+      logo: "/images/NHS_England_logo.svg.png",
     },
     {
       name: "Strat7",
-      logo: "https://researchbods.strat7.com/wp-content/uploads/2024/05/logo-research-bods-full.svg",
+      logo: "/images/STRAT7-logo.svg",
     },
     {
       name: "Royal Shakespeare Company",
-      logo: "https://cdn.rsc.org.uk/sitefinity/images/rsc/rsc_logo.tmb-logo-98x75.png",
+      logo: "/images/RSC-logo.png",
     },
     {
       name: "Ministry of Justice",
-      logo: "https://www.childrenslegalcentre.com/wp-content/uploads/2018/08/MoJ-logo.jpg",
+      logo: "/images/MoJ-logo.jpg",
     },
     {
       name: "Kry/Livi",
-      logo: "https://images.prismic.io/sacra/46b12667-c1d8-4d12-9c93-11eda22c600c_Group+1.png?auto=compress,format",
+      logo: "/images/KRY-logo.avif",
     },
     {
       name: "NHS Digital",
-      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBQilzfJDpoL_rJpo-rC4sqM33cODA9-dF3w&s",
+      logo: "/images/images.png",
     },
     {
       name: "Kirklees Council",
-      logo: "https://www.kirklees.gov.uk/beta/assets/global/img/open-graphic-protocol-logo.jpg",
+      logo: "/images/open-graphic-protocol-logo.jpg",
     },
   ];
 
