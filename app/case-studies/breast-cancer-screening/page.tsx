@@ -174,7 +174,7 @@ export default function BreastCancerScreeningCaseStudy() {
                 <Card className="overflow-hidden">
                   <CardContent className="p-0">
                     <Image
-                      src="/images/MAYS-login.png"
+                      src="/images/MAYS-Login.png"
                       alt="NHS Login Email Page"
                       width={800}
                       height={400}
