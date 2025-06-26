@@ -12,6 +12,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ModernChrimesLanding() {
   const clients = [
@@ -42,6 +43,19 @@ export default function ModernChrimesLanding() {
     {
       name: "Kirklees Council",
       logo: "/images/open-graphic-protocol-logo.jpg",
+    },
+  ];
+
+  const caseStudies = [
+    {
+      id: "breast-cancer-screening",
+      title:
+        "Developing a service to allow people to manage their breast cancer screening appointments",
+      organisation: "NHS England",
+      role: "Senior Developer",
+      date: "2025",
+      image: "/images/MAYS.png",
+      slug: "breast-cancer-screening",
     },
   ];
 
@@ -260,8 +274,73 @@ export default function ModernChrimesLanding() {
           </div>
         </section>
 
+        {/* Case Studies Section */}
+        <section
+          className="py-16 bg-gray-50"
+          aria-labelledby="case-studies-heading"
+        >
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12">
+              <h2
+                id="case-studies-heading"
+                className="text-3xl font-bold text-gray-900 mb-4"
+              >
+                Case studies
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
+              {caseStudies.map((study) => (
+                <Card
+                  key={study.id}
+                  className="border border-gray-200 bg-white hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+                >
+                  <div className="grid md:grid-cols-2 gap-0">
+                    <div className="relative h-64 md:h-auto">
+                      <Image
+                        src={study.image || "/placeholder.svg"}
+                        alt={`Screenshot of ${study.title}`}
+                        fill
+                        className="object-fill"
+                      />
+                    </div>
+                    <CardContent className="p-8 flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                          <span className="font-medium text-emerald-600">
+                            {study.organisation}
+                          </span>
+                          <span>•</span>
+                          <span>{study.role}</span>
+                          <span>•</span>
+                          <span>{study.date}</span>
+                        </div>
+                        <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
+                          {study.title}
+                        </h3>
+                        <p className="text-gray-600 mb-6">
+                          Senior Developer on a new service to allow patients to
+                          manage their breast screening appointments through a
+                          web service using NHS Login.
+                        </p>
+                      </div>
+                      <Link
+                        href={`/case-studies/${study.slug}`}
+                        className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-semibold transition-colors duration-200"
+                      >
+                        Read case study
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </CardContent>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* About Section */}
-        <section className="py-16 bg-gray-50" aria-labelledby="about-heading">
+        <section className="py-16 bg-white" aria-labelledby="about-heading">
           <div className="container mx-auto px-6">
             <div className="grid lg:grid-cols-1 gap-12 items-center">
               <div>
@@ -346,7 +425,7 @@ export default function ModernChrimesLanding() {
                           Long-term support
                         </h3>
                         <p className="text-gray-600">
-                          We’re here for you beyond launch, offering advice and
+                          We're here for you beyond launch, offering advice and
                           support as your needs evolve.
                         </p>
                       </div>
@@ -360,7 +439,7 @@ export default function ModernChrimesLanding() {
 
         {/* Sponsorships Section */}
         <section
-          className="py-16 bg-white"
+          className="py-16 bg-gray-50"
           aria-labelledby="sponsorships-heading"
         >
           <div className="container mx-auto px-6">
@@ -369,11 +448,10 @@ export default function ModernChrimesLanding() {
                 id="sponsorships-heading"
                 className="text-3xl font-bold text-gray-900 mb-4"
               >
-                Community Sponsorships
+                Community sponsorships
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                We're proud to support local communities and organizations that
-                make a difference.
+                We're proud to support local communities and organisations.
               </p>
             </div>
             <div className="max-w-4xl mx-auto">
