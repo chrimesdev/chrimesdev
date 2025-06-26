@@ -119,9 +119,8 @@ export default function ModernChrimesLanding() {
                   building for impact
                 </h1>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                  We partner with forward-thinking organizations to create
-                  exceptional websites and digital solutions that drive results
-                  and engage audiences.
+                  We partner with organisations to user-centered websites and
+                  services that make a difference to people.
                 </p>
                 <a
                   aria-describedby="email-description"
@@ -151,7 +150,7 @@ export default function ModernChrimesLanding() {
             <div
               className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center"
               role="list"
-              aria-label="Client organizations"
+              aria-label="Client organisations"
             >
               {clients.map((client, index) => (
                 <div
@@ -378,7 +377,7 @@ export default function ModernChrimesLanding() {
                         </h3>
                         <p className="text-gray-600">
                           From healthcare to the arts, our work helps
-                          organizations connect with their communities and
+                          organisations connect with their communities and
                           achieve real impact.
                         </p>
                       </div>
