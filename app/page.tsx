@@ -119,8 +119,8 @@ export default function ModernChrimesLanding() {
                   building for impact
                 </h1>
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                  We partner with organisations to user-centered websites and
-                  services that make a difference to people.
+                  We partner with organisations to create user-centered websites
+                  and services that make a difference to people.
                 </p>
                 <a
                   aria-describedby="email-description"
