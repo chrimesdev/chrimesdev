@@ -57,6 +57,16 @@ export default function ModernChrimesLanding() {
       image: "/images/MAYS.png",
       slug: "breast-cancer-screening",
     },
+    {
+      id: "cohort-manager",
+      title:
+        "Developing a service to ensure the right people are selected for invitation to screening",
+      organisation: "NHS England",
+      role: "Senior Developer",
+      date: "2025",
+      image: "/images/CM-Dashboard.png",
+      slug: "cohort-manager",
+    },
   ];
 
   return (
@@ -288,22 +298,22 @@ export default function ModernChrimesLanding() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {caseStudies.map((study) => (
                 <Card
                   key={study.id}
                   className="border border-gray-200 bg-white hover:shadow-lg transition-shadow duration-300 overflow-hidden"
                 >
-                  <div className="grid md:grid-cols-2 gap-0">
-                    <div className="relative h-64 md:h-auto">
+                  <div className="grid grid-cols-1 gap-0">
+                    <div className="relative h-64">
                       <Image
                         src={study.image || "/placeholder.svg"}
                         alt={`Screenshot of ${study.title}`}
                         fill
-                        className="object-fill"
+                        className="object-cover"
                       />
                     </div>
-                    <CardContent className="p-8 flex flex-col justify-between">
+                    <CardContent className="p-6 flex flex-col justify-between">
                       <div>
                         <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
                           <span className="font-medium text-emerald-600">
@@ -314,13 +324,13 @@ export default function ModernChrimesLanding() {
                           <span>•</span>
                           <span>{study.date}</span>
                         </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
+                        <h3 className="text-lg font-bold text-gray-900 mb-4 leading-tight">
                           {study.title}
                         </h3>
                         <p className="text-gray-600 mb-6">
-                          Senior Developer on a new service to allow patients to
-                          manage their breast screening appointments through a
-                          web service using NHS Login.
+                          {study.id === "breast-cancer-screening"
+                            ? "Senior Developer on a new service to allow patients to manage their breast screening appointments through a web service using NHS Login."
+                            : "Senior Developer on a new service to help screening staff identify and correct demographic details for eligible participants using NHS CIS2 authentication."}
                         </p>
                       </div>
                       <Link
