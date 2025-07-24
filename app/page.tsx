@@ -1128,19 +1128,6 @@ export default function ModernChrimesLanding() {
                     {/* Content */}
                     <div>
                       {/* Logo placeholder with enhanced styling */}
-                      <div className="inline-flex items-center gap-3 mb-6 p-4 bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl border border-emerald-200/50">
-                        <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-2xl flex items-center justify-center">
-                          <Trophy className="h-6 w-6 text-white" />
-                        </div>
-                        <div>
-                          <div className="text-sm font-medium text-emerald-700">
-                            Featured Partner
-                          </div>
-                          <div className="text-xs text-gray-500">
-                            Community Sponsor
-                          </div>
-                        </div>
-                      </div>
 
                       <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
                         Meanwood Cricket Club
@@ -1182,17 +1169,12 @@ export default function ModernChrimesLanding() {
                           <Trophy className="h-7 w-7 text-emerald-600" />
                         </div>
                         <div className="absolute bottom-6 left-6 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-lg">
-                          <Target className="h-7 w-7 text-blue-600" />
-                        </div>
-
-                        {/* Season sponsor badge */}
-                        <div className="absolute bottom-6 right-6 text-right">
                           <div className="inline-block px-4 py-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg">
                             <div className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
                               2025
                             </div>
                             <div className="text-sm font-semibold text-gray-700">
-                              Season Sponsor
+                              Ground Sponsor
                             </div>
                           </div>
                         </div>
