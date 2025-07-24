@@ -132,7 +132,6 @@ export default function ModernChrimesLanding() {
 
               {/* Enhanced CTA Button */}
               <div className="relative group">
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                 <a
                   aria-describedby="email-description"
                   href="mailto:adam@chrimes.dev"
@@ -140,7 +139,7 @@ export default function ModernChrimesLanding() {
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-transparent opacity-0 group-hover/button:opacity-100 transition-opacity duration-300 animate-shimmer"></span>
                   <Mail className="h-4 w-4 transition-all duration-300 group-hover/button:rotate-12 group-hover/button:scale-110" />
-                  <span className="relative font-medium">Get in touch</span>
+                  <span className="relative font-medium">adam@chrimes.dev</span>
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-emerald-400/20 to-blue-400/20 opacity-0 group-hover/button:opacity-100 transition-opacity duration-300"></div>
                 </a>
               </div>
@@ -250,7 +249,6 @@ export default function ModernChrimesLanding() {
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   {/* Primary CTA */}
                   <div className="relative group">
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                     <a
                       aria-describedby="start-project-description"
                       href="mailto:adam@chrimes.dev"
@@ -259,7 +257,7 @@ export default function ModernChrimesLanding() {
                       <span className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-transparent opacity-0 group-hover/button:opacity-100 transition-opacity duration-300"></span>
                       <Mail className="h-5 w-5 transition-all duration-300 group-hover/button:rotate-12 group-hover/button:scale-110" />
                       <span className="relative font-medium">
-                        Start your project
+                        adam@chrimes.dev
                       </span>
                       <ArrowRight className="h-5 w-5 transition-all duration-300 group-hover/button:translate-x-1" />
                     </a>
