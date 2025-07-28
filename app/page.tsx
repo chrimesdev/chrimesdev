@@ -169,6 +169,14 @@ export default function ModernChrimesLanding() {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Column - Content */}
               <div className="space-y-8 order-2 lg:order-1">
+                {/* Badge/Tag */}
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-100 to-blue-100 rounded-full border border-emerald-200/50 backdrop-blur-sm">
+                  <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-emerald-700">
+                    Website Design &amp; Development
+                  </span>
+                </div>
+
                 {/* Main Heading with Gradient Text */}
                 <div className="space-y-4">
                   <h1
@@ -232,6 +240,15 @@ export default function ModernChrimesLanding() {
                       <ArrowRight className="h-5 w-5 transition-all duration-300 group-hover/button:translate-x-1" />
                     </a>
                   </div>
+
+                  {/* Secondary CTA */}
+                  <a
+                    href="#case-studies"
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 font-semibold rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl hover:bg-white hover:text-emerald-600 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 transition-all duration-300 text-lg group"
+                  >
+                    <span>View our work</span>
+                    <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </a>
                 </div>
 
                 <span id="start-project-description" className="sr-only">
@@ -239,8 +256,8 @@ export default function ModernChrimesLanding() {
                 </span>
               </div>
 
-              {/* Right Column - Visual Elements - Hidden */}
-              <div className="hidden">
+              {/* Right Column - Visual Elements */}
+              <div className="relative order-1 lg:order-2 h-64 sm:h-80 lg:h-[600px] flex items-center justify-center mb-8 lg:mb-0">
                 {/* Main Visual Container */}
                 <div className="relative w-full max-w-lg h-full">
                   {/* Floating Cards - Hidden on mobile, visible on larger screens */}
@@ -1328,22 +1345,6 @@ export default function ModernChrimesLanding() {
                       </p>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              {/* Bottom CTA */}
-              <div className="text-center">
-                <div className="inline-flex items-center gap-4 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-gray-300 font-medium">
-                      Available for new projects
-                    </span>
-                  </div>
-                  <div className="w-px h-6 bg-white/20"></div>
-                  <span className="text-white font-semibold">
-                    Let's make something amazing together
-                  </span>
                 </div>
               </div>
             </div>
